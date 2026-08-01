@@ -1,10 +1,9 @@
 const timeline = [
   { time: "14:00", title: "IN", note: "スタジオ入り。曲と声を一緒にチェック。" },
-  { time: "14:15", title: "REC", note: "歌う。何テイクか重ねて、いい瞬間を残す。" },
-  { time: "15:10", title: "SELECT", note: "好きなテイクを選ぶ。ここも一緒に。" },
-  { time: "15:25", title: "MIX", note: "声を整えて、伴奏の中へ馴染ませる。" },
-  { time: "15:50", title: "VIDEO?", note: "撮りたければ、投稿用の動画も。" },
-  { time: "16:00", title: "DONE", note: "自分の声でできた一曲を受け取る。" },
+  { time: "14:10", title: "FIRST REC", note: "1曲通します。声出しをしている間に、エンジニアが曲構成を把握します。" },
+  { time: "14:15", title: "REC & SELECT", note: "歌う。何テイクか重ねて、いい瞬間を残す。さらに好きなテイクを選ぶ。ここも一緒に。" },
+  { time: "15:10", title: "MIX", note: "声を整えて、伴奏の中へ馴染ませる。" },
+  { time: "15:30", title: "VIDEO?", note: "撮りたければ、投稿用の動画も。" },
 ];
 
 export function SessionSample() {
@@ -12,9 +11,8 @@ export function SessionSample() {
     <section id="session" aria-labelledby="session-heading" className="overflow-hidden border-b-2 border-foreground bg-foreground text-background">
       <div className="mx-auto w-full max-w-7xl px-4 py-20 md:px-8 md:py-28">
         <p className="font-mono text-xs font-bold uppercase tracking-widest text-secondary">02 / Session sample</p>
-        <div className="mt-3 flex flex-col justify-between gap-5 md:flex-row md:items-end">
+        <div className="mt-3">
           <h2 id="session-heading" className="font-heading text-5xl font-black leading-none tracking-tight text-balance md:text-7xl">2時間、こんな感じ。</h2>
-          <p className="max-w-sm text-base font-semibold leading-relaxed text-background/70">上手さを見せるサンプルじゃなく、当日のテンポをそのまま。</p>
         </div>
         <ol className="mt-14 grid gap-4 md:grid-cols-3">
           {timeline.map((step, index) => (

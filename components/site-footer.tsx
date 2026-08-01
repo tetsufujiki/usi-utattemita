@@ -12,10 +12,10 @@ export function SiteFooter() {
     <footer className="border-t-2 border-foreground bg-foreground text-background">
       <div className="mx-auto w-full max-w-7xl px-4 py-12 md:px-8">
         <div className="flex flex-col justify-between gap-10 md:flex-row">
-          <div><p className="font-heading text-3xl font-black tracking-[-0.05em]">UTATTEMITA</p><p className="mt-2 max-w-xs text-sm font-medium text-background/60">好きな曲を、自分の声で一曲に。United Studioの歌ってみた入口。</p></div>
+          <div><p className="font-heading text-3xl font-black tracking-[-0.05em]">UTATTEMITA</p></div>
           <nav aria-label="関連サイト"><ul className="grid grid-cols-2 gap-x-8 gap-y-4">{links.map((link) => <li key={link.href}><a href={link.href} target="_blank" rel="noopener noreferrer" className="group flex items-start gap-1 focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-background"><span><span className="flex items-center gap-1 font-heading text-sm font-black">{link.label}<ArrowUpRight className="size-3 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" /></span><span className="text-xs text-background/50">{link.note}</span></span></a></li>)}</ul></nav>
         </div>
-        <div className="mt-10 flex flex-col gap-3 border-t border-background/25 pt-6 text-xs text-background/50 sm:flex-row sm:items-center sm:justify-between"><p>&copy; {new Date().getFullYear()} United Studio Inc.</p><div className="flex gap-4"><a href="https://united-studio.com/privacy" className="focus-visible:outline-4 focus-visible:outline-offset-4">プライバシー</a><a href="https://united-studio.com/terms" className="focus-visible:outline-4 focus-visible:outline-offset-4">利用規約</a></div></div>
+        <div className="mt-10 flex flex-col gap-3 border-t border-background/25 pt-6 text-xs text-background/50 sm:flex-row sm:items-center sm:justify-between"><a href="https://united-studio.com" target="_blank" rel="noopener noreferrer" className="focus-visible:outline-4 focus-visible:outline-offset-4 focus-visible:outline-background">&copy; {new Date().getFullYear()} United Studio Inc.</a><div className="flex gap-4"><a href="https://reserve.united-studio.com/privacy" className="focus-visible:outline-4 focus-visible:outline-offset-4">プライバシー</a><a href="https://reserve.united-studio.com/terms" className="focus-visible:outline-4 focus-visible:outline-offset-4">利用規約</a></div></div>
       </div>
     </footer>
   );

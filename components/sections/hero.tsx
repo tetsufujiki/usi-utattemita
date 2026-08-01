@@ -1,4 +1,4 @@
-import { ArrowDownRight, Mic2, Play, Radio, Sparkles } from "lucide-react";
+import { ArrowDownRight, Clock3, Headphones, Mic2, Play, Radio, Sparkles } from "lucide-react";
 
 export function Hero() {
   return (
@@ -7,7 +7,7 @@ export function Hero() {
       <div className="relative mx-auto w-full max-w-7xl px-4 py-10 md:px-8 md:py-16 lg:min-h-[calc(100svh-4rem)]">
         <div className="flex items-start justify-between gap-3">
           <p className="pop-shadow-sm -rotate-2 border-2 border-foreground bg-surprise px-3 py-1.5 font-heading text-xs font-black uppercase tracking-wider md:text-sm">
-            Your voice, your track
+            Your song. Your voice.
           </p>
           <div className="flex items-end gap-1" aria-hidden="true">
             {[18, 34, 25, 44, 30, 52, 22].map((height, index) => (
@@ -27,7 +27,8 @@ export function Hero() {
               <span className="ml-2 inline-block text-[clamp(2.6rem,9vw,6.5rem)] tracking-[-0.04em]">になる。</span>
             </h1>
             <p className="mt-7 max-w-xl text-lg font-semibold leading-relaxed md:text-xl">
-              好きな曲を、好きな声で。録音もミックスも一緒に進むから、あなたはマイクの前で歌うだけ。
+              好きな曲を、自分の声で。<br />
+              録音もミックスも一緒に進むから、あなたはマイクの前で歌うだけ。
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
               <a href="#feeling" className="pop-shadow group inline-flex items-center justify-center gap-3 border-2 border-foreground bg-primary px-7 py-4 font-heading text-lg font-black transition-transform hover:-translate-y-1 focus-visible:outline-4 focus-visible:outline-offset-4 active:translate-x-1 active:translate-y-1 active:shadow-none">
@@ -35,7 +36,7 @@ export function Hero() {
                 <ArrowDownRight className="size-6 transition-transform group-hover:rotate-12" aria-hidden="true" />
               </a>
               <a href="#session" className="inline-flex items-center justify-center gap-2 border-2 border-foreground bg-background px-7 py-4 font-heading text-base font-bold transition-colors hover:bg-surprise focus-visible:outline-4 focus-visible:outline-offset-4">
-                どう進むか見る
+                どうやって作る？
                 <Play className="size-4 fill-current" aria-hidden="true" />
               </a>
             </div>
@@ -65,7 +66,8 @@ export function Hero() {
         <ul className="mt-16 flex flex-wrap gap-2 text-xs font-bold md:text-sm">
           <li className="flex items-center gap-2 border-2 border-foreground bg-background px-3 py-2"><Mic2 className="size-4" />歌うだけでOK</li>
           <li className="flex items-center gap-2 border-2 border-foreground bg-background px-3 py-2"><Radio className="size-4" />録音＋MIX</li>
-          <li className="flex items-center gap-2 border-2 border-foreground bg-background px-3 py-2">空きを見てから決める</li>
+          <li className="flex items-center gap-2 border-2 border-foreground bg-background px-3 py-2"><Clock3 className="size-4" />当日完成</li>
+          <li className="flex items-center gap-2 border-2 border-foreground bg-background px-3 py-2"><Headphones className="size-4" />聴きながら帰れる</li>
         </ul>
       </div>
     </section>
