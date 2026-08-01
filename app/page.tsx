@@ -8,9 +8,70 @@ import { Included } from "@/components/sections/included";
 import { Faq } from "@/components/sections/faq";
 import { FinalCta } from "@/components/sections/final-cta";
 
+const siteUrl = "https://utattemita.united-studio.com";
+const siteName = "Utattemita by UNITED STUDIO INC";
+const pageName = "歌ってみた録音・うたみた制作｜Utattemita by UNITED STUDIO INC";
+const description = "好きな曲を、自分の声で。東京・板橋のUnited Studioが、歌ってみたの録音・ミックス・マスタリング・動画収録まで一緒に進めます。";
+
+const structuredData = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: siteName,
+    url: siteUrl,
+    description,
+    publisher: {
+      "@type": "Organization",
+      name: "UNITED STUDIO INC",
+      url: "https://united-studio.com",
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    name: pageName,
+    url: siteUrl,
+    description,
+    isPartOf: {
+      "@type": "WebSite",
+      name: siteName,
+      url: siteUrl,
+    },
+    about: {
+      "@type": "Service",
+      name: "歌ってみた録音・うたみた制作",
+    },
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: "歌ってみた録音・うたみた制作",
+    serviceType: "Vocal recording, mixing, mastering and video recording for cover songs",
+    url: siteUrl,
+    provider: {
+      "@type": "Organization",
+      name: "UNITED STUDIO INC",
+      url: "https://united-studio.com",
+    },
+    areaServed: {
+      "@type": "Place",
+      name: "Tokyo, Japan",
+    },
+    offers: {
+      "@type": "Offer",
+      url: "https://reserve.united-studio.com",
+      availability: "https://schema.org/InStock",
+    },
+  },
+];
+
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData).replace(/</g, "\\u003c") }}
+      />
       <SiteHeader />
       <main className="flex-1">
         <Hero />
