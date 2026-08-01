@@ -1,16 +1,15 @@
 import type { Metadata, Viewport } from "next";
-import { M_PLUS_Rounded_1c, Noto_Sans_JP } from "next/font/google";
+import { Geist, Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
 
-const display = M_PLUS_Rounded_1c({
-  weight: ["500", "700", "800"],
+const display = Noto_Sans_JP({
+  weight: ["700", "900"],
   subsets: ["latin"],
   variable: "--font-display",
   display: "swap",
 });
 
-const body = Noto_Sans_JP({
-  weight: ["400", "500", "700"],
+const body = Geist({
   subsets: ["latin"],
   variable: "--font-body",
   display: "swap",
@@ -18,28 +17,23 @@ const body = Noto_Sans_JP({
 
 export const metadata: Metadata = {
   title: {
-    default: "Utattemita | United Studio — 好きな曲を、自分の声で残す",
+    default: "Utattemita | 歌うだけで、一曲になる。",
     template: "%s | Utattemita",
   },
   description:
-    "歌ってみた・カバー音源をスタジオで。録音からミックスまでエンジニアと一緒に、2時間から。初めてでも、一人でも。United Studioの歌ってみた入口サイト。",
+    "好きな曲をスタジオで歌って、自分の一曲に。録音・ミックス・マスタリングまでUnited Studioのエンジニアと一緒に進めます。",
 };
 
 export const viewport: Viewport = {
-  themeColor: "#faf7f0",
+  themeColor: "#ffffff",
+  width: "device-width",
+  initialScale: 1,
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html
-      lang="ja"
-      className={`h-full antialiased bg-background ${display.variable} ${body.variable}`}
-    >
-      <body className="min-h-full flex flex-col font-sans">{children}</body>
+    <html lang="ja" className={`bg-background antialiased ${display.variable} ${body.variable}`}>
+      <body className="flex min-h-screen flex-col overflow-x-hidden font-sans">{children}</body>
     </html>
   );
 }

@@ -1,84 +1,34 @@
-import { Mic, Music, Share2, Video } from "lucide-react";
+import { AudioLines, CircleStop, Clapperboard, Headphones, Mic2, SlidersHorizontal } from "lucide-react";
 
-const subItems = [
-  {
-    icon: Music,
-    title: "カバー音源",
-    description: "好きな曲のカバーを、きちんとした音で。",
-  },
-  {
-    icon: Share2,
-    title: "SNS投稿用の音声",
-    description: "TikTokやInstagramにそのまま使える形で。",
-  },
-  {
-    icon: Video,
-    title: "歌唱動画",
-    description: "必要に応じて、歌っている姿も簡単に撮影できます。",
-  },
+const moments = [
+  { icon: Mic2, word: "歌う", sub: "マイクの前へ", color: "bg-primary", rotate: "-rotate-2" },
+  { icon: CircleStop, word: "録る", sub: "エンジニアと", color: "bg-surprise", rotate: "rotate-2" },
+  { icon: SlidersHorizontal, word: "整う", sub: "声がクリアに", color: "bg-secondary", rotate: "-rotate-1" },
+  { icon: Headphones, word: "馴染む", sub: "曲の中へ", color: "bg-accent", rotate: "rotate-1" },
+  { icon: AudioLines, word: "完成", sub: "自分の一曲", color: "bg-primary", rotate: "-rotate-2" },
+  { icon: Clapperboard, word: "撮れる", sub: "必要なら動画も", color: "bg-surprise", rotate: "rotate-2" },
 ];
 
 export function WhatYouCanMake() {
   return (
-    <section
-      id="what-you-can-make"
-      aria-labelledby="make-heading"
-      className="mx-auto w-full max-w-6xl px-4 py-16 md:px-6 md:py-24"
-    >
-      <p className="text-sm font-semibold uppercase tracking-wider text-primary">
-        What you can make
-      </p>
-      <h2
-        id="make-heading"
-        className="mt-2 font-heading text-3xl font-extrabold tracking-tight text-balance md:text-4xl"
-      >
-        できあがるもの
-      </h2>
-
-      <div className="mt-8 grid gap-4 md:grid-cols-3">
-        {/* Main: utattemita audio */}
-        <div className="flex flex-col justify-between gap-6 rounded-3xl bg-foreground p-7 text-background md:col-span-2 md:row-span-2 md:p-10">
+    <section id="feeling" aria-labelledby="feeling-heading" className="border-b-2 border-foreground bg-background px-4 py-20 md:px-8 md:py-28">
+      <div className="mx-auto w-full max-w-7xl">
+        <div className="flex flex-col justify-between gap-5 md:flex-row md:items-end">
           <div>
-            <span className="inline-flex size-12 items-center justify-center rounded-2xl bg-primary text-primary-foreground">
-              <Mic className="size-6" aria-hidden="true" />
-            </span>
-            <h3 className="mt-5 font-heading text-2xl font-extrabold md:text-3xl">
-              歌ってみた音源
-            </h3>
-            <p className="mt-3 max-w-md text-base leading-relaxed text-background/80">
-              あなたの歌を録音して、ミックス・マスタリングまで仕上げた完成データ。
-              投稿にも、自分用にも使えます。
-            </p>
+            <p className="font-mono text-xs font-bold uppercase tracking-widest">01 / Feeling</p>
+            <h2 id="feeling-heading" className="mt-3 font-heading text-5xl font-black leading-none tracking-tight text-balance md:text-7xl">声が、曲になっていく。</h2>
           </div>
-          <ul className="flex flex-wrap gap-2 text-sm">
-            {["録音", "ミックス", "マスタリング"].map((step) => (
-              <li
-                key={step}
-                className="rounded-full border border-background/25 px-3.5 py-1.5 font-medium"
-              >
-                {step}
-              </li>
-            ))}
-          </ul>
+          <p className="max-w-xs text-base font-semibold leading-relaxed">むずかしい説明は抜き。こんな順番で、あなたの声が作品になります。</p>
         </div>
-
-        {/* Supporting items */}
-        {subItems.map((item) => (
-          <div
-            key={item.title}
-            className="flex items-start gap-4 rounded-3xl border border-border bg-card p-6"
-          >
-            <span className="inline-flex size-10 shrink-0 items-center justify-center rounded-xl bg-secondary text-foreground">
-              <item.icon className="size-5" aria-hidden="true" />
-            </span>
-            <div>
-              <h3 className="font-heading text-base font-bold">{item.title}</h3>
-              <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                {item.description}
-              </p>
-            </div>
-          </div>
-        ))}
+        <div className="mt-12 grid grid-cols-2 gap-4 md:grid-cols-3 lg:grid-cols-6">
+          {moments.map((item, index) => (
+            <article key={item.word} className={`${item.color} ${item.rotate} pop-shadow flex min-h-52 flex-col justify-between border-2 border-foreground p-4 transition-transform hover:rotate-0 hover:-translate-y-1`}>
+              <div className="flex items-start justify-between"><item.icon className="size-7" aria-hidden="true" /><span className="font-mono text-xs font-black">0{index + 1}</span></div>
+              <div><h3 className="font-heading text-3xl font-black">{item.word}</h3><p className="mt-1 text-sm font-bold">{item.sub}</p></div>
+            </article>
+          ))}
+        </div>
+        <p className="mt-12 text-center font-heading text-2xl font-black md:text-4xl">YOU SING. <span className="bg-foreground px-2 text-background">WE MAKE IT A TRACK.</span></p>
       </div>
     </section>
   );
