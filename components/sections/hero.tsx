@@ -20,12 +20,14 @@ export function Hero() {
         <div className="mt-12 grid items-end gap-10 lg:grid-cols-[1.35fr_.65fr] lg:gap-6">
           <div>
             <h1 id="hero-heading" className="font-heading font-black leading-[0.9] tracking-[-0.065em] text-balance">
-              <span className="block text-[clamp(4.25rem,16vw,10.5rem)]">歌うだけで、</span>
-              <span className="relative mt-2 inline-block text-[clamp(5.2rem,19vw,12.5rem)]">
-                一曲
-                <span className="absolute -right-5 top-0 -z-10 size-16 rotate-12 rounded-full bg-primary md:-right-10 md:size-28" aria-hidden="true" />
+              <span className="block whitespace-nowrap text-[clamp(2.75rem,13vw,10.5rem)] md:text-[clamp(4.25rem,16vw,10.5rem)]">歌うだけで、</span>
+              <span className="mt-2 block whitespace-nowrap">
+                <span className="relative inline-block text-[clamp(4.25rem,21vw,12.5rem)] md:text-[clamp(5.2rem,19vw,12.5rem)]">
+                  一曲
+                  <span className="absolute -right-5 top-0 -z-10 size-16 rotate-12 rounded-full bg-primary md:-right-10 md:size-28" aria-hidden="true" />
+                </span>
+                <span className="ml-1 inline-block text-[clamp(2rem,8vw,6.5rem)] tracking-[-0.04em] md:ml-2 md:text-[clamp(2.6rem,9vw,6.5rem)]">になる。</span>
               </span>
-              <span className="ml-2 inline-block text-[clamp(2.6rem,9vw,6.5rem)] tracking-[-0.04em]">になる。</span>
             </h1>
             <p className="mt-7 max-w-xl text-lg font-semibold leading-relaxed md:text-xl">
               好きな曲を、自分の声で。<br />
