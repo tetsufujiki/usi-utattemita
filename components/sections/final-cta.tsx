@@ -1,7 +1,7 @@
 import { ArrowUpRight, MessageCircle, Mic2 } from "lucide-react";
 
 const RESERVE_URL = "https://reserve.united-studio.com";
-const LINE_URL = "https://line.me/R/ti/p/@united-studio";
+const LINE_URL = "https://page.line.me/568repew";
 
 export function FinalCta() {
   return (

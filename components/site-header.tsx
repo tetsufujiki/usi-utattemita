@@ -13,7 +13,7 @@ export function SiteHeader() {
     <header className="sticky top-0 z-50 border-b-2 border-foreground bg-background">
       <div className="mx-auto flex h-16 w-full max-w-7xl items-center justify-between px-4 md:px-8">
         <Link href="/" className="flex items-baseline gap-2 focus-visible:outline-4 focus-visible:outline-offset-4" onClick={() => setOpen(false)}>
-          <span className="font-heading text-xl font-black tracking-[-0.05em]">UTATTEMITA</span><span className="hidden font-mono text-[10px] font-bold sm:inline">by UNITED STUDIO</span>
+          <span className="font-heading text-xl font-black tracking-[-0.05em]">UTATTEMITA</span><span className="hidden font-mono text-[10px] font-bold sm:inline">by UNITED STUDIO INC</span>
         </Link>
         <nav aria-label="メイン" className="hidden items-center gap-5 md:flex">
           {navItems.map((item) => <a key={item.href} href={item.href} className="text-xs font-bold transition-colors hover:text-primary focus-visible:outline-4 focus-visible:outline-offset-4">{item.label}</a>)}

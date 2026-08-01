@@ -1,9 +1,10 @@
 const timeline = [
   { time: "14:00", title: "IN", note: "スタジオ入り。曲と声を一緒にチェック。" },
-  { time: "14:10", title: "FIRST REC", note: "1曲通します。声出しをしている間に、エンジニアが曲構成を把握します。" },
-  { time: "14:15", title: "REC & SELECT", note: "歌う。何テイクか重ねて、いい瞬間を残す。さらに好きなテイクを選ぶ。ここも一緒に。" },
+  { time: "14:10", title: "FIRST REC", note: "まずは1曲通します。声出しをしながら、エンジニアが曲構成を把握します。" },
+  { time: "14:15", title: "REC & SELECT", note: "歌う。何テイクか重ねて、いい瞬間を残す。\n好きなテイク選びも、一緒に。" },
   { time: "15:10", title: "MIX", note: "声を整えて、伴奏の中へ馴染ませる。" },
   { time: "15:30", title: "VIDEO?", note: "撮りたければ、投稿用の動画も。" },
+  { time: "15:55", title: "DONE", note: "完成版をファイルで受け取り。" },
 ];
 
 export function SessionSample() {
@@ -19,7 +20,7 @@ export function SessionSample() {
             <li key={step.title} className="group border-2 border-background bg-foreground p-5 transition-colors hover:bg-background hover:text-foreground">
               <div className="flex items-center justify-between gap-4"><time className="font-mono text-2xl font-black text-primary group-hover:text-primary">{step.time}</time><span className="text-xs font-bold">0{index + 1}</span></div>
               <h3 className="mt-8 font-heading text-3xl font-black">{step.title}</h3>
-              <p className="mt-2 text-sm font-medium leading-relaxed opacity-70">{step.note}</p>
+              <p className="mt-2 whitespace-pre-line text-sm font-medium leading-relaxed opacity-70">{step.note}</p>
             </li>
           ))}
         </ol>

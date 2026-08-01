@@ -15,7 +15,7 @@ export function FirstSession() {
           <ul className="mt-5 grid gap-3">
             {noNeed.map((item) => <li key={item} className="flex items-center gap-3 text-base font-bold"><span className="flex size-7 items-center justify-center bg-surprise"><Check className="size-5" /></span>{item}</li>)}
           </ul>
-          <div className="mt-7 border-t-2 border-foreground pt-5"><p className="text-xs font-bold uppercase tracking-wider text-muted-foreground">Bring only</p><p className="mt-1 font-heading text-xl font-black">歌いたい曲 ＋ 伴奏音源</p><p className="mt-2 text-sm font-medium text-muted-foreground">進め方も仕上がりも、当日一緒に決められます。</p></div>
+          <div className="mt-7 border-t-2 border-foreground pt-5"><p className="text-xs font-bold uppercase tracking-wider text-muted-foreground">BRING ONLY</p><p className="mt-1 font-heading text-xl font-black">必要なのはこれだけ</p><p className="mt-2 text-base font-bold">歌いたい曲 ＋ 伴奏音源</p><p className="mt-2 text-sm font-medium text-muted-foreground">進め方も仕上がりも、当日一緒に決められます。</p></div>
         </div>
       </div>
     </section>

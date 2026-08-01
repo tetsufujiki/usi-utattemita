@@ -1,6 +1,6 @@
 import { ArrowUpRight, Check } from "lucide-react";
 
-const facts = ["2時間から", "エンジニア付き", "録音・ミックス・マスタリング", "空きを見てから決められる"];
+const facts = ["2時間から", "エンジニア付き", "録音・ミックス・マスタリング", "当日完成", "空きを見てから決められる"];
 const RESERVE_URL = "https://reserve.united-studio.com";
 
 export function Included() {

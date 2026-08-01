@@ -1,4 +1,5 @@
 import { ArrowDownRight, Clock3, Headphones, Mic2, Play, Radio, Sparkles } from "lucide-react";
+import { RecDate } from "@/components/rec-date";
 
 export function Hero() {
   return (
@@ -45,7 +46,7 @@ export function Hero() {
           <div className="relative mx-auto w-full max-w-sm lg:mx-0">
             <div className="pop-shadow rotate-2 border-2 border-foreground bg-background p-4">
               <div className="flex items-center justify-between border-b-2 border-foreground pb-3">
-                <span className="font-mono text-xs font-bold">REC_2026.08.01</span>
+                <RecDate />
                 <span className="flex items-center gap-2 text-xs font-bold"><span className="size-2 animate-pulse rounded-full bg-primary" />REC</span>
               </div>
               <div className="flex h-28 items-center justify-center gap-1 overflow-hidden" aria-hidden="true">
