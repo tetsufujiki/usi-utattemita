@@ -13,7 +13,7 @@ export function SessionSample() {
       <div className="mx-auto w-full max-w-7xl px-4 py-20 md:px-8 md:py-28">
         <p className="font-mono text-xs font-bold uppercase tracking-widest text-secondary">02 / Session sample</p>
         <div className="mt-3">
-          <h2 id="session-heading" className="font-heading text-5xl font-black leading-none tracking-tight text-balance md:text-7xl">2時間、こんな感じ。</h2>
+          <h2 id="session-heading" className="font-heading text-5xl font-black leading-none tracking-tight text-balance md:text-7xl"><span className="block whitespace-nowrap md:inline">2時間、</span><span className="block whitespace-nowrap md:inline">こんな感じ。</span></h2>
         </div>
         <ol className="mt-14 grid gap-4 md:grid-cols-3">
           {timeline.map((step, index) => (

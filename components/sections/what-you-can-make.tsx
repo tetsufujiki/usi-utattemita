@@ -16,7 +16,7 @@ export function WhatYouCanMake() {
         <div className="flex flex-col justify-between gap-5 md:flex-row md:items-end">
           <div>
             <p className="font-mono text-xs font-bold uppercase tracking-widest">01 / Feeling</p>
-            <h2 id="feeling-heading" className="mt-3 font-heading text-5xl font-black leading-none tracking-tight text-balance md:text-7xl">声が、曲になっていく。</h2>
+            <h2 id="feeling-heading" className="mt-3 font-heading text-4xl font-black leading-none tracking-tight text-balance md:text-7xl"><span className="block whitespace-nowrap md:inline">声が、</span><span className="block whitespace-nowrap md:inline">曲になっていく。</span></h2>
           </div>
           <p className="max-w-xs text-base font-semibold leading-relaxed">むずかしい説明は抜き。こんな順番で、あなたの声が作品になります。</p>
         </div>
@@ -28,7 +28,7 @@ export function WhatYouCanMake() {
             </article>
           ))}
         </div>
-        <p className="mt-12 text-center font-heading text-2xl font-black md:text-4xl">YOU SING. <span className="bg-foreground px-2 text-background">WE MAKE IT A TRACK.</span></p>
+        <p className="mt-12 text-center font-heading text-[1.35rem] font-black md:text-4xl"><span className="block md:inline">YOU SING.</span>{" "}<span className="mt-2 inline-block whitespace-nowrap bg-foreground px-2 text-background md:mt-0">WE MAKE IT A TRACK.</span></p>
       </div>
     </section>
   );
