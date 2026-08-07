@@ -26,7 +26,6 @@ export function Included() {
             </div>
           </div>
         </div>
-        <a href="https://rec.united-studio.com" target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex items-center gap-1 border-b-2 border-foreground text-sm font-bold focus-visible:outline-4 focus-visible:outline-offset-4">料金や対応範囲を詳しく見る <ArrowUpRight className="size-4" /></a>
       </div>
     </section>
   );
