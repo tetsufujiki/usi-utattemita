@@ -5,6 +5,7 @@ import { WhatYouCanMake } from "@/components/sections/what-you-can-make";
 import { SessionSample } from "@/components/sections/session-sample";
 import { FirstSession } from "@/components/sections/first-session";
 import { Included } from "@/components/sections/included";
+import { AboutStudio } from "@/components/sections/about-studio";
 import { Faq } from "@/components/sections/faq";
 import { FinalCta } from "@/components/sections/final-cta";
 
@@ -79,6 +80,7 @@ export default function Home() {
         <SessionSample />
         <FirstSession />
         <Included />
+        <AboutStudio />
         <Faq />
         <FinalCta />
       </main>
