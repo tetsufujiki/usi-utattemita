@@ -31,8 +31,11 @@ export function Hero() {
             </h1>
 
             <p className="mt-7 max-w-5xl text-lg font-semibold leading-relaxed md:mt-9 md:text-xl lg:mt-10 lg:text-2xl lg:leading-relaxed">
-              <span className="block">好きな曲を、自分の声で。</span>
-              <span className="md:whitespace-nowrap">録音もミックスも一緒に進むから、あなたはマイクの前で<span className="whitespace-nowrap">歌うだけ。</span></span>
+              <span className="block whitespace-nowrap">好きな曲を、自分の声で。</span>
+              <span className="block md:inline md:whitespace-nowrap">
+                <span className="whitespace-nowrap">録音もミックスも一緒に進むから、</span>
+                <span className="whitespace-nowrap">あなたはマイクの前で歌うだけ。</span>
+              </span>
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row md:mt-10 md:gap-4">
