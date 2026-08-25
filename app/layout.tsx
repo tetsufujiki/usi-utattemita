@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     title: "歌うだけで、一曲になる。｜Utattemita",
     description:
       "好きな曲を、自分の声で。録音もミックスも一緒に進む、United Studioの歌ってみた制作サイト。",
-    url: "https://utattemita.united-studio.com",
+    url: "https://utattemita.united-studio.com/",
     siteName: "Utattemita by UNITED STUDIO INC",
     type: "website",
     images: [
@@ -54,6 +54,9 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="ja" className={`bg-background antialiased ${display.variable} ${body.variable}`}>
+      <head>
+        <link rel="canonical" href="https://utattemita.united-studio.com/" />
+      </head>
       <body className="flex min-h-screen flex-col overflow-x-hidden font-sans">{children}</body>
     </html>
   );

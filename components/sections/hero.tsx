@@ -37,6 +37,9 @@ export function Hero() {
                 <span className="whitespace-nowrap">あなたはマイクの前で歌うだけ。</span>
               </span>
             </p>
+            <p className="mt-3 max-w-3xl text-sm font-bold leading-relaxed text-foreground/75 md:mt-4 md:text-base">
+              東京・板橋のUnited Studioが、歌ってみた録音・ミックス・マスタリングまでエンジニア付きでサポートします。
+            </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row md:mt-10 md:gap-4">
               <a href="#feeling" className="pop-shadow group inline-flex items-center justify-center gap-3 border-2 border-foreground bg-primary px-7 py-4 font-heading text-lg font-black transition-transform hover:-translate-y-1 focus-visible:outline-4 focus-visible:outline-offset-4 active:translate-x-1 active:translate-y-1 active:shadow-none md:min-h-16 md:min-w-64 md:px-10 md:text-xl">
