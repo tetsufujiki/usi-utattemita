@@ -9,20 +9,26 @@ import { AboutStudio } from "@/components/sections/about-studio";
 import { Faq } from "@/components/sections/faq";
 import { FinalCta } from "@/components/sections/final-cta";
 
-const siteUrl = "https://utattemita.united-studio.com";
+const siteUrl = "https://utattemita.united-studio.com/";
 const siteName = "Utattemita by UNITED STUDIO INC";
 const pageName = "歌ってみた録音・うたみた制作｜Utattemita by UNITED STUDIO INC";
 const description = "好きな曲を、自分の声で。東京・板橋のUnited Studioが、歌ってみたの録音・ミックス・マスタリング・動画収録まで一緒に進めます。";
+const organizationId = `${siteUrl}#organization`;
+const websiteId = `${siteUrl}#website`;
+const webpageId = `${siteUrl}#webpage`;
+const serviceId = `${siteUrl}#service`;
 
 const structuredData = [
   {
     "@context": "https://schema.org",
     "@type": "WebSite",
+    "@id": websiteId,
     name: siteName,
     url: siteUrl,
     description,
     publisher: {
       "@type": "Organization",
+      "@id": organizationId,
       name: "UNITED STUDIO INC",
       url: "https://united-studio.com",
     },
@@ -30,27 +36,32 @@ const structuredData = [
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
+    "@id": webpageId,
     name: pageName,
     url: siteUrl,
     description,
     isPartOf: {
       "@type": "WebSite",
+      "@id": websiteId,
       name: siteName,
       url: siteUrl,
     },
     about: {
       "@type": "Service",
+      "@id": serviceId,
       name: "歌ってみた録音・うたみた制作",
     },
   },
   {
     "@context": "https://schema.org",
     "@type": "Service",
+    "@id": serviceId,
     name: "歌ってみた録音・うたみた制作",
     serviceType: "Vocal recording, mixing, mastering and video recording for cover songs",
     url: siteUrl,
     provider: {
       "@type": "Organization",
+      "@id": organizationId,
       name: "UNITED STUDIO INC",
       url: "https://united-studio.com",
     },
