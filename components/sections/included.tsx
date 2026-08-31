@@ -18,6 +18,17 @@ export function Included() {
             </div>
             <div className="border-2 border-foreground bg-background p-5 pop-shadow md:p-7">
               <p className="font-heading text-2xl font-black">空いている日と正確な料金をチェック。</p>
+              <dl className="mt-5 grid gap-2 border-y-2 border-foreground py-4 text-sm font-bold sm:text-base">
+                <div className="flex items-baseline justify-between gap-3">
+                  <dt>平日 2時間</dt>
+                  <dd className="font-heading text-xl font-black">14,000円</dd>
+                </div>
+                <div className="flex items-baseline justify-between gap-3">
+                  <dt>土日祝 2時間</dt>
+                  <dd className="font-heading text-xl font-black">18,000円</dd>
+                </div>
+              </dl>
+              <p className="mt-3 inline-block -rotate-1 bg-surprise px-3 py-1 font-heading text-sm font-black">初回は2,000円OFF</p>
               <p className="mt-3 text-sm font-medium leading-relaxed text-muted-foreground">予約システムで日付と料金を確認できます。見るだけでも大丈夫です。</p>
               <a href={RESERVE_URL} target="_blank" rel="noopener noreferrer" className="mt-6 flex items-center justify-between gap-3 border-2 border-foreground bg-primary px-5 py-4 font-heading text-lg font-black transition-transform hover:-translate-y-1 focus-visible:outline-4 focus-visible:outline-offset-4">
                 空き状況・料金を見る<ArrowUpRight className="size-6" />

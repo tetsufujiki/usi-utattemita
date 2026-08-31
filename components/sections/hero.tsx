@@ -38,7 +38,7 @@ export function Hero() {
               </span>
             </p>
             <p className="mt-3 max-w-3xl text-sm font-bold leading-relaxed text-foreground/75 md:mt-4 md:text-base">
-              東京・板橋のUnited Studioが、歌ってみた録音・ミックス・マスタリングまでエンジニア付きでサポートします。
+              東京・板橋の歌ってみたレコーディングスタジオ。録音からミックス・マスタリングまで、エンジニア付きで一緒に仕上げます。
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row md:mt-10 md:gap-4">
