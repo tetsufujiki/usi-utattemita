@@ -11,8 +11,8 @@ import { FinalCta } from "@/components/sections/final-cta";
 
 const siteUrl = "https://utattemita.united-studio.com/";
 const siteName = "Utattemita by UNITED STUDIO INC";
-const pageName = "歌ってみた録音・うたみた制作｜Utattemita by UNITED STUDIO INC";
-const description = "好きな曲を、自分の声で。東京・板橋のUnited Studioが、歌ってみたの録音・ミックス・マスタリング・動画収録まで一緒に進めます。";
+const pageName = "歌ってみた録音スタジオ 東京・板橋｜Utattemita by UNITED STUDIO";
+const description = "東京・板橋の歌ってみた録音スタジオ。エンジニア付きで、ボーカル録音からミックス・マスタリング、動画収録まで一緒に進めます。初めてのうたみた制作も、2時間のセッションで当日完成を目指せます。料金と空き状況は予約ページで確認できます。好きな曲と伴奏音源があればご相談いただけます。";
 const organizationId = `${siteUrl}#organization`;
 const websiteId = `${siteUrl}#website`;
 const webpageId = `${siteUrl}#webpage`;

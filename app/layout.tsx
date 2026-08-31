@@ -17,9 +17,9 @@ const body = Geist({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://utattemita.united-studio.com"),
-  title: "歌ってみた録音・うたみた制作｜Utattemita by UNITED STUDIO INC",
+  title: "歌ってみた録音スタジオ 東京・板橋｜Utattemita by UNITED STUDIO",
   description:
-    "好きな曲を、自分の声で。東京・板橋のUnited Studioが、歌ってみたの録音・ミックス・マスタリング・動画収録まで一緒に進めます。",
+    "東京・板橋の歌ってみた録音スタジオ。エンジニア付きで、ボーカル録音からミックス・マスタリング、動画収録まで一緒に進めます。通常は2時間のセッションで、録音からミックス・マスタリングまで完成します。料金と空き状況は予約ページで確認できます。好きな曲と伴奏音源があればご相談いただけます。",
   openGraph: {
     title: "歌うだけで、一曲になる。｜Utattemita",
     description:
