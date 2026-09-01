@@ -2,7 +2,7 @@ const timeline = [
   { time: "14:00", title: "IN", note: "スタジオ入り。曲と声を一緒にチェック。" },
   { time: "14:10", title: "FIRST REC", note: "まずは1曲通します。声出しをしながら、エンジニアが曲構成を把握します。" },
   { time: "14:15", title: "REC & SELECT", note: "歌う。何テイクか重ねて、いい瞬間を残す。\n好きなテイク選びも、一緒に。" },
-  { time: "15:10", title: "MIX", note: "声を整えて、伴奏の中へ馴染ませる。" },
+  { time: "14:50", title: "MIX", note: "声を整えて、伴奏の中へ馴染ませる。" },
   { time: "15:30", title: "VIDEO?", note: "撮りたければ、投稿用の動画も。" },
   { time: "15:55", title: "DONE", note: "完成版をファイルで受け取り。" },
 ];
