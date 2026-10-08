@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Geist, Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
+import { SiteAnalytics } from "@/components/site-analytics";
 
 const display = Noto_Sans_JP({
   weight: ["700", "900"],
@@ -57,7 +58,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <head>
         <link rel="canonical" href="https://utattemita.united-studio.com/" />
       </head>
-      <body className="flex min-h-screen flex-col overflow-x-hidden font-sans">{children}</body>
+      <body className="flex min-h-screen flex-col overflow-x-hidden font-sans"><SiteAnalytics />{children}</body>
     </html>
   );
 }
