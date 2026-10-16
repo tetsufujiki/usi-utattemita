@@ -46,6 +46,11 @@ export function AboutStudio() {
               予約する前に、スタジオについて詳しく見る
               <ArrowUpRight className="size-5 shrink-0 transition-transform group-hover:-translate-y-0.5 group-hover:translate-x-0.5" aria-hidden="true" />
             </a>
+            <p className="mt-4 text-sm font-medium leading-relaxed text-muted-foreground">
+              <a href="https://studio.united-studio.com/vocal-recording" className="inline-flex min-h-11 items-center underline decoration-foreground/40 underline-offset-4 transition-colors hover:text-primary focus-visible:outline-4 focus-visible:outline-offset-4">
+                ボーカルのみのレコーディングをお考えの方へ
+              </a>
+            </p>
           </div>
 
           <div className="grid gap-4 sm:grid-cols-[1.15fr_0.85fr] sm:items-end">
