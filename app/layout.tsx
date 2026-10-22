@@ -1,3 +1,4 @@
+import { AnalyticsJourney } from '@/components/analytics-journey'
 import type { Metadata, Viewport } from "next";
 import { Geist, Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
@@ -58,7 +59,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
       <head>
         <link rel="canonical" href="https://utattemita.united-studio.com/" />
       </head>
-      <body className="flex min-h-screen flex-col overflow-x-hidden font-sans"><SiteAnalytics />{children}</body>
+      <body className="flex min-h-screen flex-col overflow-x-hidden font-sans">
+        <AnalyticsJourney /><SiteAnalytics />{children}</body>
     </html>
   );
 }
